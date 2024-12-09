@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: var(--heading-fonts);
+}
+
+p {
+    font-family: var(--body-fonts);
+    color: var(--primaary-text)
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--primary-color) !important;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+
+    &:hover {
+        color: var(--secondary-link) !important;
+        font-weight: 500;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+.default-padding {
+    padding: 8rem 0rem;
+}
+
+:root {
+    --heading-fonts: "Inter", sans-serif;
+    --body-fonts: "Sora", sans-serif;
+    --primary-color: #121D33;
+    --primary-text: #000000;
+    --primary-white: #ffffff;
+    --secondary-link: #0B2F9F;
+    --store-btn-bg-color: #7F7F7F;
+    --store-btn-border-color: #D8DBE3
+}
+
+/* Header CSS  */
+
+/* Main Body CSS  */
+
+/* Footer CSS  */
+
+.footer-heading-container {
+    & a {
+        font-size: 1.5rem;
+        opacity: 100%;
+        color: var(--primaary-text) !important;
+        transition: color 0.3s ease, font-weight 0.3s ease;
+
+        &:hover {
+            color: var(--primary-text);
+            font-weight: 500;
+        }
+    }
+
+    & .footer-heading {
+        font-size: 3rem;
+    }
+
+    & .footer-icons,
+    .footer-links {
+        font-size: 1.5rem;
+        opacity: 60%;
+    }
+
+    & .footer-icons {
+        & a {
+            color: var(--primary-text);
+        }
+    }
+
+    & .footer-link-tag {
+        opacity: 100%;
+
+        & .copyright-icon {
+            color: var(--primary-color);
+
+            &:hover {
+                color: var(--secondary-link);
+            }
+        }
+    }
+}
+
+.applestore-button,
+.playstore-button {
+    padding: 1rem;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    background-color: var(--store-btn-bg-color);
+    border: 2px solid var(--store-btn-border-color);
+    color: var(--primary-white);
+
+    &:hover {
+        background-color: var(--primary-text);
+    }
+
+    & .store-logo {
+        font-size: 3rem;
+    }
+
+    & .applestore-desc,
+    .playstore-desc {
+        font-size: 1rem;
+    }
+
+    & .playstore-heading,
+    .applestore-heading {
+        font-size: 2rem;
+    }
+}
+
+/* Media Query  */
+
+/* For Small Devices */
+
+@media (max-width:767.98px) {
+    .default-padding {
+        padding: 4rem 0rem;
+    }
+}
+
+/* For medium Devices  */
+
+@media (min-width:768px) and (max-width:991.98px) {
+    .default-padding {
+        padding: 4rem 0rem;
+    }
+}
+
+/* For large Devices */
+
+@media (min-width:992px) {}
